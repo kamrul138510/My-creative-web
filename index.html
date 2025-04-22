@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Navbar Example</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <!-- Logo and Company Name (left side) -->
+      <a class="navbar-brand" href="#">
+        <img src="photo/mango.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+        kamrul hasan
+
+      </a>
+
+      <!-- Navbar Toggle Button for Mobile -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Menu Items (right side) -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Cover Section -->
+<section class="cover-section">
+  <div class="cover-overlay"></div>
+  <div class="cover-content">
+    <h1>Welcome to Kamrul's World</h1>
+    <p>Fresh Mangoes Delivered to Your Doorstep!</p>
+  </div>
+</section>
+
+<!-- Cover Section Styles -->
+<style>
+  .cover-section {
+    background: url('https://source.unsplash.com/1600x900/?fruit,mango') no-repeat center center;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  .cover-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+  }
+  .cover-content {
+    position: relative;
+    z-index: 1;
+  }
+  .cover-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .cover-content p {
+    font-size: 1.2rem;
+  }
+</style>
+<!-- About Section -->
+<section class="py-5 bg-light" id="about">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- About Image -->
+      <div class="col-md-6 mb-4 mb-md-0">
+       
+      </div>
+      
+      <!-- About Text -->
+      <div class="col-md-6">
+        <h2 class="mb-4">About Kamrul Hasan</h2>
+        <p>
+          I’m Kamrul Hasan, a passionate mango farmer and fruit seller dedicated to delivering the freshest mangoes straight from the orchard to your table.
+          With years of experience in natural farming, we ensure quality, sweetness, and freshness in every bite.
+        </p>
+        <p>
+          Our mission is simple – to bring you handpicked, organic mangoes that taste just like home. Thank you for supporting local farming!
+        </p>
+        <a href="#contact" class="btn btn-success mt-3">Contact Me</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Info Section -->
+<section class="py-5 bg-light" id="contact">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2>Contact Information</h2>
+      <p class="text-muted">Feel free to reach out to me anytime.</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <strong>📞 Phone:</strong> +880 13625984527423
+          </li>
+          <li class="list-group-item">
+            <strong>📧 Email:</strong> kamrul@example.com
+          </li>
+          <li class="list-group-item">
+            <strong>📍 Address:</strong> Dhaka, Bangladesh
+          </li>
+          <li class="list-group-item">
+            <strong>🌐 Facebook:</strong>
+            <a href="
+             target="_blank">facebook.com/kamrul</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Products Section -->
+<section class="py-5" id="products">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2>Our Products</h2>
+      <p class="text-muted">Check out our fresh and organic fruits</p>
+    </div>
+
+    <div class="row">
+      <!-- Product 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="photo/mango.jpg" class="card-img-top" alt="Mango">
+          <div class="card-body">
+            <h5 class="card-title">Mango</h5>
+            <p class="card-text">Fresh and juicy mangoes directly from our farm.</p>
+            <p class="text-success font-weight-bold">৳ 120/kg</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="photo/banaba.jpg" alt="banana Image" width="500" height="auto">
+
+          <div class="card-body">
+            <h5 class="card-title">banana</h5>
+            <p class="card-text">banaba.</p>
+            <p class="text-success font-weight-bold">৳ 150/kg</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="photo/water.jpg" class="card-img-top" alt="Guava">
+          <div class="card-body">
+            <h5 class="card-title">watermelon</h5>
+            <p class="card-text">Crunchy and healthy guavas, full of flavor.</p>
+            <p class="text
+            <!-- Footer Section -->
+            <!-- Footer Section -->
+            <
+            
+            
+
+
+            <!-- Footer Section -->
+            <
+
+
+
+  
+  
+</html>
